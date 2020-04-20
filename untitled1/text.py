@@ -5,7 +5,7 @@ pymysql.install_as_MySQLdb()
 # 打开数据库连接
 
 def dbconn():
-    db = pymysql.connect("39.102.33.86", "root", "Wzk+1998", "search", charset='utf8' )
+    db = pymysql.connect("****", "****", "****", "****", charset='utf8' )
 
     # 使用cursor()方法获取操作游标
     cursor = db.cursor()
@@ -26,7 +26,7 @@ def dbconn():
     return results
 
 def insert(word,id):
-    db = pymysql.connect("39.102.33.86", "root", "Wzk+1998", "search", charset='utf8' )
+    db = pymysql.connect("****", "****", "****", "****", charset='utf8' )
     # 使用cursor()方法获取操作游标
     cursor = db.cursor()
 
@@ -143,7 +143,7 @@ if __name__ == '__main__':
             continue
         else:
             print(x)
-    db = pymysql.connect("39.102.33.86", "root", "Wzk+1998", "search", charset='utf8' )
+    db = pymysql.connect("****", "****", "****", "****", charset='utf8' )
     # 使用cursor()方法获取操作游标
     cursor = db.cursor()
     for i in range(kl.getlength()):
